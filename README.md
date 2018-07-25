@@ -31,3 +31,8 @@ Running the application without rebuilding:
 ```
 docker run --rm -v $PWD:/app -v /var/log:/var/log dd-http-log-monitor
 ```
+
+### Testing
+```
+npm test
+```
