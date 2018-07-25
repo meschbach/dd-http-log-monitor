@@ -48,7 +48,7 @@ function httpStats() {
 		report: function() {
 			return {
 				totalRequests,
-				mostHits: Object.keys(sections).sort((lhs,rhs) => sections[rhs] - sections[lhs]).map( (section) =>{
+				sections: Object.keys(sections).sort((lhs,rhs) => sections[rhs] - sections[lhs]).map( (section) =>{
 					return {section, count: sections[section]};
 				}),
 				statuses
